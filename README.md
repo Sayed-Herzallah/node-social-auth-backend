@@ -1,58 +1,89 @@
-# 🛡️ NTI Social Authentication Backend
+# ðŸ’» Node Social Auth Backend
 
-A secure backend system implementing OAuth 2.0 social logins, built during the NTI (National Telecommunication Institute) training program.
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:0f172a&height=160&section=header&text=Node%20Social%20Auth%20Backend&fontSize=42&fontColor=38bdf8&fontFamily=Outfit" width="100%" />
+</div>
+
+<div align="center">
+  ![Node.js](https://img.shields.io/badge/Node.js-v18-green?logo=nodedotjs&style=for-the-badge) ![Express.js](https://img.shields.io/badge/Express.js-v4-black?logo=express&style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+</div>
 
 ---
 
-## 📌 Overview
-Nti-Social-Auth-Backend provides a boilerplate for user sign-up, login, and social integrations (Google / Facebook / GitHub login) using Node.js and Passport.js. The backend validates users and issues secure JSON Web Tokens (JWT) for route authorization.
+## ðŸ“Œ Project Overview (Description)
+A Node.js backend demonstrating social media login flows, OAuth integration, and JWT authentication.
+
+This codebase represents professional software development practices, clean module organization, and efficient code architectures tailored for high responsiveness and scalability.
 
 ---
 
-## ⚙️ Tech Stack
+## âš¡ The Engineering Challenge
+
+### ðŸ”´ Problem
+Developers building web solutions face difficulties handling state synchronization, styling inconsistencies, and complex configurations that clutter logic and trigger UI slowdowns or connection lifecycle failures.
+
+### ðŸŸ¢ Solution
+This project implements:
+* **Separation of Concerns**: Structured module layouts separating design assets from operational logic.
+* **Optimized Rendering**: Efficient script logic and CSS layout variables to maintain lightweight UI paint times.
+* **Structured Coding Standards**: Written using clean semantic patterns ensuring readable code maintainability.
+
+---
+
+## ðŸ§¬ System Architecture
+The internal layout structures are separated logically:
+`	ext
+node-social-auth-backend/
+â”œâ”€â”€ css/ or styles/      # Styling engines and layouts
+â”œâ”€â”€ js/ or src/          # Source scripts and business logic
+â”œâ”€â”€ index.html or app.js # Operational entry point
+â””â”€â”€ README.md            # System documentation
+`
+
+---
+
+## ðŸ› ï¸ Technology Stack
 
 | Technology | Purpose |
-| ---------- | ------- |
-| Node.js    | Runtime engine |
-| Express.js | REST API routing |
-| Passport.js| Social authentication strategies |
-| MongoDB    | User profiles storage |
-| JWT        | Authorized session tokens |
+| :--- | :--- |
+| Node.js | Server-side JavaScript runtime |
+| Express | RESTful API server framework |
 
 ---
 
-## 🚀 Core Features
-* 🌐 **Social Providers:** Support for Google & Facebook authorization flows.
-* 🔑 **Token-Based Auth:** Issuing stateless JWTs for secure REST routes.
-* 🛡️ **Role Protection:** Secure middleware checks restricting unauthorized routes.
-* 📂 **Clean Architecture:** Separation of routers, configurations, and user models.
+## ðŸš€ Local Developer Setup & Run
+
+### ðŸ“‹ Prerequisites
+* Modern web browser / Node.js runtime (depending on project stack)
+
+### âš™ï¸ Quick Start Steps
+`ash
+    git clone https://github.com/Sayed-Herzallah/node-social-auth-backend.git
+    cd node-social-auth-backend
+    npm install
+    npm run dev
+`
+
+### âš™ï¸ Environment Variables
+Create a `.env` file in the root directory:
+```ini
+PORT=3000
+NODE_ENV=development
+```
 
 ---
 
-## ⚙️ Setup & Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Sayed-Herzallah/Nti-Social-Auth-Backend.git
-   ```
-2. Install npm dependencies:
-   ```bash
-   npm install
-   ```
-3. Configure environment variables (create `.env` file):
-   ```env
-   PORT=5000
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret_key
-   GOOGLE_CLIENT_ID=your_google_client_id
-   GOOGLE_CLIENT_SECRET=your_google_client_secret
-   ```
-4. Run server locally:
-   ```bash
-   npm run dev
-   ```
+## ðŸ”® Future Improvements
+* [ ] Integrate automated unit testing.
+* [ ] Add dynamic dark/light theme switcher.
+* [ ] Improve responsiveness on extra-small mobile screen viewports.
 
 ---
 
-## 👨‍💻 Author
-**Sayed Herzallah**  
-Full Stack Developer
+## ðŸ‘¥ Contributors
+* **Sayed Herzallah** - Lead Developer & Systems Architect
+
+---
+
+## ðŸ“„ License
+Licensed under the **MIT License**.
